@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKG's Fitness</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+    body {
+      font-family: "Baloo 2", cursive;
+      margin: 0px;
+      padding: 0px;
+      background: url("Images/Gym2.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      color: white;
+    }
+    .left {
+      display: inline-block;
+      /* border: 2px solid red; */
+      position: absolute;
+      left: 18px;
+      top: 15px;
+    }
+
+    .left img {
+      width: 95px;
+      height: 70px;
+    }
+
+    .left div {
+      line-height: 28px;
+      font-size: 19px;
+      text-align: center;
+    }
+
+    .mid {
+      display: block;
+      width: 39%;
+      margin: 20px auto;
+      /* border: 2px solid green; */
+    }
+    .right {
+      position: absolute;
+      right: 23px;
+      top: 30px;
+      display: inline-block;
+      /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      font-size: 22px;
+      display: inline-block;
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 2px 6px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    .btn {
+      font-family: "Baloo 2", cursive;
+      margin: 0px 9px;
+      color: white;
+      background-color: black;
+      padding: 5px 17px;
+      border: 2px solid rgb(56, 54, 54);
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: rgb(63, 60, 60);
+    }
+
+    .container {
+      /* border: 2px solid darkgreen; */
+      margin: 80px 55px;
+      padding: 40px 11px;
+      width: 33%;
+      border-radius: 12px;
+    }
+
+    .form-group input {
+      text-align: center;
+      font-size: 20px;
+      display: block;
+      width: 233px;
+      padding: 0px;
+      border: 2px solid black;
+      margin: 11px auto;
+      border-radius: 7px;
+      font-family: "Baloo 2", cursive;
+    }
+
+    .container h1 {
+      text-align: center;
+    }
+
+    .container button {
+      display: block;
+      margin: 21px auto;
+      width: 20%;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="left">
+        <img src="Images/Gym_logo.jpg" alt="" />
+        <div>SKG Fitness</div>
+      </div>
+
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Start your fitness journey by joining us now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Address" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Contact" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Email" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
